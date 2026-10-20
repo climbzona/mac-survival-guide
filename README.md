@@ -109,6 +109,8 @@ I'd recommend changing a few things at a time rather than copying an entire conf
 
 ---
 
+<a id="part-2-level-up-vs-code"></a>
+
 ## 👨‍💻 Part 2: Level Up VS Code
 
 There are a lot of editors and IDEs available on the Mac, and there's definitely no single right answer. I ended up using VS Code after seeing it referenced in my course materials and, as a Cursor user, doing a quick comparison of the options. For me, it hit a good balance: lightweight, easy to customize, and extensible enough for the Python, Docker, YAML, and Kubernetes work we were doing in MIS 547.
