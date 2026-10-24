@@ -1,34 +1,34 @@
 # Mac Survival Guide
 
-*Cloud computing from the land of ⌘.*
+*A more comfortable macOS workspace for technical learning.*
 
-<img src="images/mac-users-unite.png" alt="Mac Users Unite Remotely (in the Cloud) graphic" width="140" align="right">
+<img src="images/mac-users-unite.png" alt="Mac Users Unite AI-generated illustration" width="140" align="right">
 
-A student-maintained collection of macOS-specific setup notes, tools, tips, and fixes for **students learning cloud computing**.
+A student-maintained collection of optional macOS setup notes, tools, tips, and fixes for **students working with development tools, coding, cloud services, and other technical coursework**.
 
-This guide began in **MIS 547: Fundamentals of Cloud Computing at the University of Arizona**. The goal isn't to reinvent your course setup. It's to document the little differences we Mac users encounter along the way and make life easier for the next person.
+This guide began during **MIS 547: Fundamentals of Cloud Computing at the University of Arizona**, but the terminal and editor tips are intended to be useful well beyond one class. The goal isn't to reinvent your course setup. It's to document the little differences Mac users encounter along the way and make life easier for the next person.
 
 > **Your course instructions always win.** If anything here conflicts with a lab or instructor guidance, follow your course materials. Please [open an issue](../../issues) so the guide can be updated.
 >
-> This is an independent student resource, not an official University of Arizona guide.
+> This is an independent student resource, not an official University of Arizona guide. An instructor's permission to share it does **not** mean the instructor or university has reviewed, endorsed, or agreed to support its recommendations.
 
-**Jump to:** [Part 1: iTerm2](#part-1-level-up-your-mac-terminal) · [Part 2: VS Code](#part-2-level-up-vs-code) · [Contributing](#contributing)
+**Jump to:** [Part 1: iTerm2](#part-1-level-up-your-mac-terminal) · [Part 2: VS Code](#part-2-level-up-vs-code) · [MIS 547 examples](#additional-tools-used-in-mis-547) · [Contributing](#contributing)
 
 ## 🖥️ Part 1: Level Up Your Mac Terminal
 
-A lot of cloud computing happens in the terminal. macOS already includes the Terminal app, so you **do not need iTerm2** for your course.
+A lot of technical work happens in the terminal. macOS already includes the Terminal app, so you **do not need iTerm2** to follow this guide or complete a course.
 
-That said, learning cloud computing encouraged me to set up my Mac with my preferred **iTerm2** app. I find it a nicer environment when spending a lot of time working with SSH, Docker, Git, DigitalOcean, and other command-line tools.
+That said, my cloud computing coursework encouraged me to set up my Mac with my preferred **iTerm2** app. I find it a nicer environment when spending a lot of time working with SSH, Git, Python, and other command-line tools.
 
 ### iTerm2 (also check out Warp and Ghostty)
 
-[iTerm2](https://iterm2.com/) is a popular Terminal replacement for Mac with more customization, profiles, split panes, better window management, and lots of quality-of-life features. You absolutely don't need any of these for class. They're simply options if you want a better or more personalized command-line environment.
+[iTerm2](https://iterm2.com/) is a popular Terminal replacement for Mac with more customization, profiles, split panes, better window management, and lots of quality-of-life features. You absolutely don't need any of these for a class unless its instructor says otherwise. They're simply options if you want a better or more personalized command-line environment.
 
 Other options worth exploring: [Warp](https://www.warp.dev/) and [Ghostty](https://ghostty.org/).
 
 ### ✨ My Setup: iTerm2
 
-Here's the setup I've been using. Again, none of this is necessary for a cloud computing course, but it's an example of how much you can customize your terminal once you move beyond the defaults.
+Here's the setup I've been using. Again, none of this is necessary for most technical coursework, but it's an example of how much you can customize your terminal once you move beyond the defaults.
 
 **Look & feel**
 
@@ -113,7 +113,7 @@ I'd recommend changing a few things at a time rather than copying an entire conf
 
 ## 👨‍💻 Part 2: Level Up VS Code
 
-There are a lot of editors and IDEs available on the Mac, and there's definitely no single right answer. I ended up using VS Code after seeing it referenced in my course materials and, as a Cursor user, doing a quick comparison of the options. For me, it hit a good balance: lightweight, easy to customize, and extensible enough for the Python, Docker, YAML, and Kubernetes work we were doing in MIS 547.
+There are a lot of editors and IDEs available on the Mac, and there's definitely no single right answer. I ended up using VS Code after seeing it referenced in my MIS 547 course materials and, as a Cursor user, doing a quick comparison of the options. For me, it hit a good balance: lightweight, easy to customize, and extensible enough for Python and other development workflows. The original course-specific Docker, Kubernetes, and YAML examples are [collected below](#additional-tools-used-in-mis-547).
 
 Just like Part 1, none of this is required for your course. It's more of a:
 
@@ -144,10 +144,7 @@ I wanted VS Code to feel like a natural extension of the iTerm2 setup from Part 
 
 **A few of my favorite functional tweaks**
 
-- 🐳 **Docker:** support for Dockerfiles and container workflows
-- ☸️ **Kubernetes:** manifest and cluster tooling
 - 🐍 **Python:** IntelliSense, environment detection, linting, and debugging
-- 📄 **YAML:** schema validation and structural checks
 - ⌨️ **`code .`:** launch the current project directly from iTerm2
 - 🧹 **File hygiene:** spaces instead of tabs and automatic trailing-whitespace cleanup
 
@@ -169,10 +166,9 @@ Think of these as starting points, not a recipe. Pick what looks useful and igno
 
 #### 🧩 Extensions
 
-- Docker
-- Kubernetes
-- YAML
-- Python
+- Python, if you're working with Python code
+
+The Docker, Kubernetes, and YAML extensions in my original setup were tied to MIS 547 and are listed in the [course-specific examples](#additional-tools-used-in-mis-547) below. Install only what your current work calls for.
 
 *Check the extension publisher and permissions before installing.*
 
@@ -185,23 +181,6 @@ code .
 ```
 
 VS Code opens the current directory as the workspace. Tiny feature. Very convenient.
-
-#### 📄 YAML & Kubernetes
-
-My YAML setup is configured so files ending in:
-
-```text
-*.k8s.yaml
-```
-
-can automatically use Kubernetes schema validation and autocompletion.
-
-I also use:
-
-- 2-space indentation
-- Spaces instead of hard tabs
-- Automatic trailing-whitespace cleanup
-- A custom YAML tag configuration to avoid false-positive errors where needed
 
 ### 💡 Want the walkthrough?
 
@@ -221,6 +200,26 @@ That's really the point of both sections: the default tools work just fine, but 
 
 ---
 
+## Additional tools used in MIS 547
+
+The following extensions and settings reflect my original **MIS 547 cloud computing coursework**. They're examples, **not general requirements** and not necessarily needed in another course. Follow your current instructor's prescribed environment and versions.
+
+- **Docker extension:** Dockerfile editing and container workflows.
+- **Kubernetes extension:** cluster and manifest tooling.
+- **YAML extension:** schema validation and structural checks for configuration files.
+
+### YAML & Kubernetes example
+
+In my MIS 547 setup, files matching `*.k8s.yaml` could use Kubernetes schema validation and autocompletion. I also used 2-space indentation, spaces instead of tabs, automatic trailing-whitespace cleanup, and custom YAML tag configuration when needed to avoid false-positive errors.
+
+---
+
+## AI-assisted setup and course policies
+
+AI assistants can be useful for explaining settings and troubleshooting an unfamiliar Mac development environment. Verify suggested commands and configuration changes before running them. **For coursework, follow your instructor's rules on permitted AI use, disclosure, and academic integrity.** A setup suggestion here is not permission to use AI on a graded assignment or assessment.
+
+---
+
 ## Contributing
 
 Found an outdated setting, a better Mac-specific workaround, or a tip that would help another student? Issues and pull requests are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -229,4 +228,4 @@ Found an outdated setting, a better Mac-specific workaround, or a tip that would
 
 Created by **Gabriel Lucero**, originally for fellow students in **University of Arizona MIS 547**. Independent student resource; not affiliated with or endorsed by the university.
 
-The written guide is offered under the [MIT License](LICENSE). The “Mac Users Unite” graphic is included for layout review and is **not covered by the MIT License**; confirm permission or a suitable license before public redistribution. Third-party names and trademarks belong to their respective owners. Other images should only be reused when you have the necessary rights.
+The written guide is offered under the [MIT License](LICENSE). The “Mac Users Unite” illustration was **created by the author using generative AI**; it is not included in the MIT license for the written guide. Reuse of AI-generated artwork may depend on applicable tool terms and law. Third-party names and trademarks belong to their respective owners. Reuse other images only when you have the necessary rights.
