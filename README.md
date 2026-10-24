@@ -1,6 +1,6 @@
 # Mac Survival Guide
 
-*A more comfortable macOS workspace for technical learning.*
+*Cloud computing from the land of ⌘.*
 
 <img src="images/mac-users-unite.png" alt="Mac Users Unite AI-generated illustration" width="140" align="right">
 
@@ -204,9 +204,9 @@ That's really the point of both sections: the default tools work just fine, but 
 
 The following extensions and settings reflect my original **MIS 547 cloud computing coursework**. They're examples, **not general requirements** and not necessarily needed in another course. Follow your current instructor's prescribed environment and versions.
 
-- **Docker extension:** Dockerfile editing and container workflows.
-- **Kubernetes extension:** cluster and manifest tooling.
-- **YAML extension:** schema validation and structural checks for configuration files.
+- 🐳 **Docker:** support for Dockerfiles and container workflows
+- ☸️ **Kubernetes:** manifest and cluster tooling
+- 📄 **YAML:** schema validation and structural checks
 
 ### YAML & Kubernetes example
 
